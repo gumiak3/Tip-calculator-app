@@ -6,10 +6,10 @@ const customTip = document.getElementById('custom-tip');
 const tip_label = document.getElementById('tip-ammount-id');
 const total_label = document.getElementById('total-price-id');
 const reset_button = document.getElementById('reset-button');
-var billPrice = 1;
-var tipAmmount = 0;
-var tip_percentage = 0.05;
-var numberOfPeople = 1;
+let billPrice = 1;
+let tip_percentage = 0.05;
+let numberOfPeople = 1;
+let tipAmmount = tip_percentage*billPrice;
 Right_side_changes(tip_label,total_label,tipAmmount,numberOfPeople,billPrice)
 bill.addEventListener('input',(event)=>{
     billPrice = bill.value;
