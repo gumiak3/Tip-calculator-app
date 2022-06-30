@@ -59,7 +59,7 @@ reset_button.addEventListener('click',(event)=>{
 });
 
 function Right_side_changes(label,label2,tip,peopleNumber,bill){
-    var currentTip = (tip/peopleNumber);
+    let currentTip = (tip/peopleNumber);
     let temp = (bill/peopleNumber)+currentTip;
     label.innerHTML = '$'+currentTip.toFixed(2);
     label2.innerHTML = '$'+temp.toFixed(2);
