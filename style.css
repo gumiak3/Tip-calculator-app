@@ -70,7 +70,12 @@ html,body{
 .bill-input-div input{
     padding:5px 15px 5px 15px;
     font-size:20px;
+    border:2px solid transparent;
 }
+.bill-input-div input:focus{
+    border: 2px solid var(--buttonFocusColor);
+}
+
 input{
     background-color: var(--bgInput);
     border:none;
